@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Riforma e la Controriforma: Schema Interattivo</title>
+    <!-- Caricamento di Tailwind CSS per lo styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Stile di base per il corpo */
+        body {
+            font-family: 'Inter', sans-serif;
+            /* Nuovo sfondo più caldo */
+            background-color: #fff7ed; 
+        }
+        /* Stile per i blocchi interattivi */
+        details {
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border-radius: 12px;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Ombra più definita */
+        }
+        summary {
+            padding: 1rem 1.5rem;
+            display: block;
+            font-weight: 700;
+            user-select: none;
+            border-radius: 12px;
+            position: relative;
+            list-style: none; /* Nasconde il triangolo di default */
+            transition: background-color 0.2s;
+        }
+        /* Icona personalizzata per l'espansione */
+        summary::after {
+            content: '►';
+            position: absolute;
+            right: 1.5rem;
+            top: 50%;
+            transform: translateY(-50%) rotate(0deg);
+            transition: transform 0.2s;
+        }
+        details[open] summary::after {
+            content: '▼';
+        }
+        /* Contenuto interno */
+        .content {
+            padding: 1rem 1.5rem 1.5rem;
+            border-top: 1px solid #e2e8f0;
+        }
+        /* Livello 1: Tema Principale (Verde Smeraldo) */
+        .level-1 {
+            background-color: #059669; /* Verde Smeraldo Scuro */
+            color: white;
+            font-size: 1.5rem;
+        }
+        /* Livello 2: Blocchi Principali (Bianco con bordo Verde Menta) */
+        .level-2 {
+            background-color: #ffffff;
+            border: 2px solid #10b981; /* Verde Menta */
+            color: #065f46; /* Testo verde scuro */
+            font-size: 1.25rem;
+        }
+        /* Livello 3: Sottodettagli (Giallo Luminoso) */
+        .level-3 {
+            background-color: #fef3c7; /* Giallo Chiaro */
+            border: 1px solid #fcd34d;
+            color: #b45309; /* Testo marrone/arancione */
+        }
+    </style>
+</head>
+<body class="p-4 sm:p-8">
+
+    <div class="max-w-4xl mx-auto">
+        <h1 class="text-3xl font-extrabold text-gray-800 mb-6 text-center">
+            Schema Interattivo: Riforma Protestante e Controriforma
+        </h1>
+
+        <div class="space-y-4">
+            <!-- TITOLO PRINCIPALE -->
+            <details open class="level-1">
+                <summary class="hover:bg-green-700">UNITÀ 3: LA RIFORMA PROTESTANTE E LA CONTRORIFORMA CATTOLICA</summary>
+                
+                <div class="content bg-white text-gray-700 space-y-4">
+                    
+                    <!-- BLOCCO 1: Crisi della Chiesa -->
+                    <details class="level-2">
+                        <summary class="hover:bg-green-50">1. CAUSE DELLA RIFORMA: La Crisi della Chiesa di Roma (Inizio '500)</summary>
+                        <div class="content space-y-3">
+                            <!-- Testo in rosso accesso per indicare la "crisi" -->
+                            <p class="font-semibold text-red-600">Grave crisi morale dovuta a:</p>
+                            <ul class="list-disc list-inside space-y-1 ml-4">
+                                <li><strong>Lusso e Distacco:</strong> Papa e cardinali vivevano nel lusso, trascurando le questioni morali e i fedeli.</li>
+                                <li><strong>Vendita delle Indulgenze:</strong> Pratica istituita per guadagnare denaro (es. Papa Leone X per la Basilica di San Pietro).
+                                    <details class="level-3 mt-2">
+                                        <summary class="text-sm hover:bg-yellow-100">Dettaglio: Cosa sono le Indulgenze?</summary>
+                                        <p class="content text-sm">Significano che i peccati possono essere in parte perdonati in cambio di somme di denaro (elemosine) versate alla Chiesa. Lutero la considerava un imbroglio.</p>
+                                    </details>
+                                </li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <!-- BLOCCO 2: Martin Lutero -->
+                    <details class="level-2">
+                        <summary class="hover:bg-green-50">2. L'INIZIATORE: Martin Lutero e le 95 Tesi (1517)</summary>
+                        <div class="content space-y-3">
+                            <p class="font-semibold">Martin Lutero, frate tedesco e professore di teologia, si opponeva alla vendita delle indulgenze.</p>
+                            <ul class="list-disc list-inside space-y-1 ml-4">
+                                <li><strong>Idea Centrale:</strong> La salvezza dell'anima si ottiene <strong>SOLO con la fede</strong> (e non pagando o con le opere).</li>
+                                <li><strong>L'Evento:</strong> Nel <strong>1517</strong> pubblica le sue idee con <strong>95 Tesi</strong> a Wittenberg, denunciando il comportamento della Chiesa e negando l'autorità del Papa.</li>
+                                <li><strong>Diffusione:</strong> Le Tesi vengono tradotte dal latino al tedesco e si diffondono rapidamente grazie alla <strong>stampa</strong>.</li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <!-- BLOCCO 3: Principi della Riforma -->
+                    <details class="level-2">
+                        <summary class="hover:bg-green-50">3. I PRINCIPI DELLA RIFORMA PROTESTANTE</summary>
+                        <div class="content space-y-3">
+                            <p class="font-semibold">Dopo le Tesi, Lutero definisce i principi della sua nuova Chiesa:</p>
+                            <ul class="list-disc list-inside space-y-1 ml-4">
+                                <li><strong>Fonte Unica:</strong> L'unico riferimento è il <strong>Vangelo/Sacre Scritture</strong>. Tutti gli uomini sono in grado di leggerle.</li>
+                                <li><strong>Nessun Mediatore:</strong> Non c'è bisogno del sacerdote per comunicare con Dio (nega il clero cattolico).</li>
+                                <li><strong>Il Pastore:</strong> L'unico ruolo di guida spirituale (pastore) è un fedele come gli altri, che <strong>può sposarsi</strong> e avere figli.</li>
+                                <li><strong>Sacramenti:</strong> Sono validi solo due Sacramenti: <strong>Battesimo</strong> ed <strong>Eucarestia</strong>.</li>
+                                <li><strong>Autorità:</strong> Il Papa non ha alcuna autorità.</li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <!-- BLOCCO 4: Conflitto e Pace -->
+                    <details class="level-2">
+                        <summary class="hover:bg-green-50">4. REAZIONE CATTOLICA, CONFLITTO E PACE DI AUGUSTA</summary>
+                        <div class="content space-y-3">
+                            <ul class="list-disc list-inside space-y-1 ml-4">
+                                <li><strong>Scomunica (1520):</strong> Il Papa scomunica Lutero, escludendolo dalla comunità dei fedeli.</li>
+                                <li><strong>Dieta di Worms:</strong> L'imperatore Carlo V invita Lutero per convincerlo a sottomettersi. Lutero rifiuta e viene cacciato.</li>
+                                <li><strong>Divisione della Germania:</strong> Molti principi tedeschi appoggiano Lutero per ottenere maggiore indipendenza dall'Imperatore. La Germania è divisa tra principi <strong>cattolici</strong> e <strong>luterani</strong>.</li>
+                                <li><strong>Pace di Augusta (1555):</strong> Stabilisce il principio che <strong>ogni principe è libero di scegliere la propria fede, ma i sudditi devono seguire la religione del proprio principe</strong>, mettendo fine alle guerre.</li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <!-- BLOCCO 5: Diffusione -->
+                    <details class="level-2">
+                        <summary class="hover:bg-green-50">5. LA DIFFUSIONE DELLA RIFORMA IN EUROPA</summary>
+                        <div class="content space-y-3">
+                            <p class="font-semibold">La Riforma Luterana si diffonde in Nord Europa (Svezia, Danimarca, Olanda).</p>
+                            <ul class="list-disc list-inside space-y-1 ml-4">
+                                <li><strong>Calvinismo:</strong> Si sviluppa in <strong>Svizzera</strong> (Zurigo, Ginevra) grazie a <strong>Giovanni Calvino</strong>.</li>
+                                <li><strong>Anglicanesimo:</strong> Nasce in <strong>Inghilterra</strong> con <strong>Re Enrico VIII</strong>, che si proclama Capo della Chiesa d'Inghilterra dopo il rifiuto del Papa di annullare il suo matrimonio (per poter divorziare).</li>
+                                <li><strong>Ugonotti:</strong> Nome dato ai fedeli protestanti in Francia.</li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <!-- BLOCCO 6: Controriforma -->
+                    <details class="level-2">
+                        <summary class="hover:bg-green-50">6. LA CONTRORIFORMA CATTOLICA (La Risposta della Chiesa)</summary>
+                        <div class="content space-y-3">
+                            <p class="font-semibold">La Chiesa di Roma reagisce per arginare la diffusione delle idee protestanti.</p>
+                            <ul class="list-disc list-inside space-y-1 ml-4">
+                                <li><strong>Concilio di Trento (1545):</strong> Assemblea di tutti i vescovi per prendere decisioni (Controriforma).</li>
+                                <li><strong>Tribunale dell'Inquisizione:</strong> Istituito per giudicare chi è accusato di eresia (idee contrarie alla Chiesa). Gli eretici erano spesso condannati a morte sul rogo.</li>
+                                <li><strong>Indice dei Libri Proibiti:</strong> Elenco delle opere vietate perché contenevano idee contrarie alla religione cattolica.</li>
+                            </ul>
+                        </div>
+                    </details>
+
+                </div>
+            </details>
+        </div>
+    </div>
+
+</body>
+</html>
